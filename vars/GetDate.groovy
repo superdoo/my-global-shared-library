@@ -10,3 +10,10 @@ class DateUtils {
        // return currentDateTime.format(formatter)
     }
 }
+
+
+
+
+    // Call the method from the shared library
+                    def currentDate = GetDate.getCurrentDateTime()
+                    echo "Current date and time: ${currentDate}"
