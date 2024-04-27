@@ -1,5 +1,3 @@
-// MySharedLibrary.groovy
-
-def greet(name) {
-    echo "Hello, ${name}!"
+def greetings() {
+    return "Hello, world!"
 }
