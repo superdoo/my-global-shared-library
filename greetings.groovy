@@ -1,1 +1,5 @@
-just test
+// MySharedLibrary.groovy
+
+def greet(name) {
+    echo "Hello, ${name}!"
+}
