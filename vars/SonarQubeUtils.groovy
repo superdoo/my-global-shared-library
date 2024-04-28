@@ -2,7 +2,7 @@
 
 def callSonarQubeScanner(String projectName, String projectKey) {
      //Call SonarQube scanner
-       withSonarQubeEnv('SonarQube') {
+       withSonarQubeEnv('sonarqube-server') {
        sh "sonar:sonar -Dsonar.projectKey=${projectKey} -Dsonar.projectName=${projectName}"
     }
 
@@ -14,6 +14,4 @@ def callSonarQubeScanner(String projectName, String projectKey) {
 
 
 
- //withSonarQubeEnv() {
- //     sh "${scannerHome}/bin/sonar-scanner"
- //   }
+ //sonarqube-server
